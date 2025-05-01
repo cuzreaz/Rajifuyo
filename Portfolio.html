@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajifuyo</title>
+    <style>
+        /* Dark mode-inspired color scheme */
+        :root {
+            --dark-bg: #1a1a1a;
+            --darker-bg: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #4a89dc;
+            --card-bg: #2d2d2d;
+            --hover-color: #3a3a3a;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+        }
+        
+        header {
+            background: var(--darker-bg);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 20px 0 0 0;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--hover-color);
+        }
+        
+        .about-section {
+            margin-bottom: 40px;
+        }
+        
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #444;
+        }
+        
+        .project-info {
+            padding: 20px;
+        }
+        
+        .project-title {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+        }
+        
+        .project-desc {
+            margin: 0;
+            color: #b0b0b0;
+        }
+        
+        footer {
+            background: var(--darker-bg);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tentang">Tentang Saya</a></li>
+                    <li><a href="#proyek">Proyek Sekolah</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="tentang" class="about-section">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya seorang pelajar yang antusias dengan berbagai proyek sekolah yang telah saya kerjakan selama masa studi. Portfolio ini menampilkan beberapa karya terbaik saya dari berbagai mata pelajaran.</p>
+        </section>
+
+        <section id="proyek">
+            <h2>Proyek Sekolah</h2>
+            <div class="projects-container">
+                <!-- Proyek 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x180?text=Proyek+Fisika" alt="Proyek Fisika" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Eksperimen Fisika</h3>
+                        <p class="project-desc">Proyek tentang hukum Newton dengan berbagai percobaan interaktif.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyek 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x180?text=Proyek+Biologi" alt="Proyek Biologi" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Makalah Biologi</h3>
+                        <p class="project-desc">Penelitian tentang ekosistem hutan hujan tropis dan keanekaragaman hayati.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyek 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x180?text=Proyek+Informatika" alt="Proyek Informatika" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Aplikasi Web Sederhana</h3>
+                        <p class="project-desc">Pembuatan website untuk tugas akhir mata pelajaran TIK.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyek 4 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x180?text=Proyek+Sejarah" alt="Proyek Sejarah" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Presentasi Sejarah</h3>
+                        <p class="project-desc">Analisis tentang peristiwa penting kemerdekaan Indonesia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Jika Anda ingin menghubungi saya tentang proyek-proyek ini, silakan email ke: <strong>siswa@sekolah.sch.id</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Portfolio Sekolah. Semua proyek adalah karya pribadi untuk tujuan pendidikan.</p>
+        </div>
+    </footer>
+</body>
+</html>
